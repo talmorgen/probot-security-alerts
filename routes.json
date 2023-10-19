@@ -1,0 +1,22 @@
+{
+  "routes": [],
+  "versions": [
+    {
+      "name": "none",
+      "pathPrefix": ""
+    }
+  ],
+  "policies": [
+    {
+      "handler": {
+        "export": "SecretScanningTestInboundPolicy",
+        "module": "$import(@zuplo/runtime)",
+        "options": {
+          "fakeSecret": "zpka_0b2a30ec8c654db398b3807d73d81549_397727db"
+        }
+      },
+      "name": "custom-secret-scanning-test",
+      "policyType": "custom-secret-scanning-test"
+    }
+  ]
+}
